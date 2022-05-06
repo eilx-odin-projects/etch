@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding-bottom: 10px;
+    width:min(80vw, 80vh);
+    background: lightgray;
+    border-radius: 8px;
+    grid-area: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#Controls {
+    display: flex;
+    margin: 0 1em;
+    flex-wrap: wrap;
+}
+
+#Controls > * {
+    flex: 1;
+}
+
+#ScaleContainer, #ColorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#Grid {
+    --grid-size: 16;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+}
+
+#Grid > * {
+    box-sizing: border-box;
+    border: solid 1px lightgray;
+    width: calc(100% / var(--grid-size));
+    aspect-ratio: 1 / 1;
+    user-select: none;
+    transition: background 250ms;
+}
+
+#Grid > *:hover {
+    color: white;
+}

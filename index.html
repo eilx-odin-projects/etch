@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch</title>
+    <script src="main.js" type="module" defer></script>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <h1>Etch a Sketch</h1>
+    <main>
+        <div id="Grid"></div>
+        <aside id="Controls">
+            <button id="Clear">Clear</button>
+            <div id="ScaleContainer">
+                <label for="Scale">16</label>
+                <input id="Scale" type="range" min="10" max="100" value="16"/>
+            </div>
+            <div id="ColorContainer">
+                <label for="Color">Color</label>
+                <input id="Color" type="color" />
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
